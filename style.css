@@ -34,6 +34,12 @@ body {
   color: white;
   font-size: 2.3rem;
   margin: 0;
+  word-break: break-word; /* Evita recortes */
+  white-space: normal;    /* Permite saltos de línea */
+  overflow-wrap: anywhere;
+  padding: 0.5rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .input-form {
