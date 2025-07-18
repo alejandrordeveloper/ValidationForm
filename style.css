@@ -1,0 +1,122 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #364153;
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#form {
+  background-color: #052f4a;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+#title {
+  text-align: center;
+  color: white;
+  font-size: 2.3rem;
+  margin: 0;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #f6339a;
+  font-size: 1.5rem;
+}
+
+.form-input {
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+}
+
+.form-input::placeholder {
+  color: gray;
+}
+
+#informacion {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0;
+  /* display: none; Initially hidden */
+}
+
+#phone-code {
+  color: gray;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+#phone-container {
+  display: flex;
+  gap: 1rem;
+}
+
+#phone-number {
+  width: 100%;
+}
+
+#form-btn {
+  padding: 1rem;
+  background-color: #7ccf00;
+  color: black;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s, opacity 0.2s;
+  box-shadow: 0 2px 8px rgba(238, 37, 188, 0.1);
+}
+
+.user-validate {
+  display: none;
+}
+
+.correct {
+  outline: 2px solid rgb(11, 235, 11);
+}
+
+.incorrect {
+  outline: 2px solid rgb(235, 11, 11);
+}
+
+footer {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+a {
+  color: #f6339a;
+  text-decoration: none;
+}
+
+@media (min-width: 640px) {
+  #form {
+    width: 60%;
+  }
+}
